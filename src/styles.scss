@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import './variables';
+
+h1 {
+  color: $primary-color;
+  font-family: $font-stack;
+  font-size: 250%;
+}
+
+h2, h3 {
+  color: $secondary-color;
+  font-family: $font-stack;
+  font-weight: lighter;
+}
+
+body {
+  margin: 2em;
+}
+
+body, input[type="text"], button {
+  color: $dark-color;
+  font-family: Verdana, serif;
+}
+
+* {
+  font-family: $font-stack;
+  color: $dark-color;
+}

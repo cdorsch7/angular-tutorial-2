@@ -1,0 +1,13 @@
+<div id="search-component">
+  <label for="search-box">Hero Search</label>
+  <!-- # is an angular specific syntax, creates a template variable for reuse anywhere later in template -->
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  <ul class="search-result">
+    <!-- heroes$ indicates this is an observable not an array, async pipe turns into array for *ngFor -->
+    <li *ngFor="let hero of heroes$ | async" >
+      <a routerLink="/detail/{{hero.id}}">
+        {{hero.name}}
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,25 @@
+@import "src/variables";
+
+h2 {
+  color: $primary-color;
+  font-family: $font-stack;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+div {
+  font-style: italic;
+}
+
+.clear {
+  color: #333;
+  background-color: #eee;
+  margin-bottom: 12px;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.clear:hover {
+  color: white;
+  background-color: #42545C;
+}
